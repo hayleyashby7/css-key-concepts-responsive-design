@@ -28,3 +28,39 @@ img {
 h1 {
 	font-size: 2.25rem;
 }
+
+@media screen and (min-width: 700px) {
+	html,
+	body {
+		font-size: 1.125rem;
+	}
+
+	h1 {
+		font-size: 2.375rem;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	html,
+	body {
+		font-size: 1.25rem;
+	}
+
+	h1 {
+		font-size: 2.5rem;
+	}
+}
+
+@media screen and (hover: none) and (pointer: coarse) {
+	/*Very likely this is a mobile device based on W3 Media Queries level 4. */
+	.ipsum {
+		display: none;
+	}
+}
+
+@media screen and (prefers-color-scheme: dark) {
+	body {
+		background-color: var(--dark);
+		color: var(--light);
+	}
+}
