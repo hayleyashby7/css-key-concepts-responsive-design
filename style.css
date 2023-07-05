@@ -29,25 +29,50 @@ h1 {
 	font-size: 2.25rem;
 }
 
-@media screen and (min-width: 700px) {
-	html,
-	body {
-		font-size: 1.125rem;
-	}
+h2 {
+	font-size: 2rem;
+}
 
+h3 {
+	font-size: 1.75rem;
+}
+
+p {
+	font-size: 1.25rem;
+}
+
+@media screen and (min-width: 700px) {
 	h1 {
 		font-size: 2.375rem;
+	}
+
+	h2 {
+		font-size: 2.125rem;
+	}
+
+	h3 {
+		font-size: 1.875rem;
+	}
+	p {
+		font-size: 1.375rem;
 	}
 }
 
 @media screen and (min-width: 1000px) {
-	html,
-	body {
-		font-size: 1.25rem;
-	}
-
 	h1 {
 		font-size: 2.5rem;
+	}
+
+	h2 {
+		font-size: 2.25rem;
+	}
+
+	h3 {
+		font-size: 2rem;
+	}
+
+	p {
+		font-size: 1.5rem;
 	}
 }
 
