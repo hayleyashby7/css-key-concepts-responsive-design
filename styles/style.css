@@ -91,16 +91,13 @@ p {
 	}
 }
 
-nav {
-	background-color: var(--dark);
-}
-
 a {
 	color: var(--light);
 	text-decoration: none;
 }
 
 .menu {
+	background-color: var(--dark);
 	display: flex;
 	justify-content: flex-end;
 	gap: 1.25rem;
@@ -130,16 +127,23 @@ a {
 }
 
 .menu .item:hover,
-.has-submenu:hover .submenu-toggle {
+.has-submenu:hover .submenu-toggle,
+.has-submenu:hover .submenu .item:hover {
 	background-color: var(--teal);
 }
 
-.has-submenu:hover .submenu {
-	display: flex;
-	flex-flow: column nowrap;
-	justify-content: center;
+.has-submenu {
+	position: relative;
 }
 
+.has-submenu:hover .submenu {
+	display: block;
+	position: absolute;
+	top: 100%;
+	left: 0;
+}
+
+.has-submenu:hover .submenu,
 .submenu .item:hover {
 	background-color: var(--dark);
 }
