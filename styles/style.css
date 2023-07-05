@@ -8,6 +8,7 @@
 
 body {
 	background-color: var(--light);
+	font-family: 'Roboto', sans-serif;
 }
 
 .card {
@@ -88,4 +89,57 @@ p {
 		background-color: var(--dark);
 		color: var(--light);
 	}
+}
+
+nav {
+	background-color: var(--dark);
+}
+
+a {
+	color: var(--light);
+	text-decoration: none;
+}
+
+.menu {
+	display: flex;
+	justify-content: flex-end;
+	gap: 1.25rem;
+}
+
+.menu > .item {
+	padding: 0.625rem;
+}
+
+.menu,
+.has-submenu,
+.submenu {
+	list-style-type: none;
+}
+
+.submenu {
+	display: none;
+}
+
+.submenu-toggle {
+	background-color: inherit;
+	font-family: inherit;
+	margin: 0;
+	border: none;
+	outline: none;
+	color: var(--light);
+}
+
+.menu .item:hover,
+.has-submenu:hover .submenu-toggle {
+	background-color: var(--teal);
+}
+
+.has-submenu:hover .submenu {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+}
+
+.submenu .item:hover {
+	background-color: var(--dark);
 }
