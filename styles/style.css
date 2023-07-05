@@ -82,6 +82,10 @@ p {
 	.ipsum {
 		display: none;
 	}
+
+	.menu {
+		flex-flow: column nowrap;
+	}
 }
 
 @media screen and (prefers-color-scheme: dark) {
